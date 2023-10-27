@@ -12,7 +12,7 @@ let array2 = [10,7,5,4,7];
 let x= 5,index = 4;
 function insertNumberToArray(array2,x,index){
     if(index >= 0 && index <= array2.length-1){
-        for(let i = array2.length-1; i > index; i++){
+        for(let i = array2.length-1; i > index; i--){
                 array2[i] = array2[i-1];
         }
         array2[index] = x;
